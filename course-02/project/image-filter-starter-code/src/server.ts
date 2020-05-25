@@ -19,7 +19,7 @@ import fs from 'fs';
     res.status(200).send("Welcome to the Cloud!");
   } );
 
-  app.get("/filteredimage/", async ( req, res ) => {
+  app.get("/filteredimage/", async ( req: Request, res: Response ) => {
       let { image_url } = req.query;
       // return res.status(200).send(image_url)
 
