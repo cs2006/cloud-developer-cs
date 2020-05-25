@@ -18,7 +18,8 @@ export async function filterImageFromURL(inputURL: string): Promise<string>{
         .greyscale() // set greyscale
         .write(__dirname+outpath, (img)=>{
             resolve(__dirname+outpath);
-        });
+        }
+        );
     });
 }
 
